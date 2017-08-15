@@ -1,8 +1,32 @@
+
 /*
   By: Hopkins; 
   Date: 2017-08-14;
   github: http://github.com/hopkins0;
 */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 40px; /* bottom has to be the same as footer height */
+}
+footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #E7E7E7;
+    text-align:center;
+    padding:5px;
+  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+}
+
+
+
+
 
 .equipo-ranking{
   width: 60px;
@@ -16,21 +40,21 @@
 }
 
 .equipo-aceptados{
-  width: 120px;
-  max-width: 120px;
-  min-width: 100px;
+  width: 10%;
+  /*max-width: 120px;*/
+  /*min-width: 100px;*/
   text-align: center; 
 }
 .equipo-time{
-  width: 80px;
-  max-width: 100px;
-  min-width: 80px;
+  width: 10%;
+  /*max-width: 100px;*/
+  /*min-width: 80px;*/
   text-align: center;
 }
 .problema{
   width: 5%;
-  max-width: 100px;
-  min-width: 40;  
+  /*max-width: 100px;*/
+  min-width: 60px;  
   text-align: center;
 }
 
@@ -39,6 +63,7 @@
 }
 .FPAC{
   background-color: #1D8806  ! important;
+  color: white;
 }
 .ACC{
   /*background-color: #33cc33  ! important;*/
@@ -47,7 +72,7 @@
 
 
 .WA{
-  background-color: #B32200  ! important;
+  background-color: #EE7F75  ! important;
 }
 
 .JD{
