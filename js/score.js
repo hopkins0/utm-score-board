@@ -158,11 +158,17 @@ $(function() {
         info.push('">');
 
         if (cell.status != StatusEnum.NOT_ATTEMPT){
-          if (cell.status >= StatusEnum.ACCEPTED)
+          if (cell.status >= StatusEnum.ACCEPTED){
+            info.push('<strong>');
             info.push(parseInt(cell.penaltyTime));
+            info.push('</strong>');
+          }
           
-          if (cell.attemptsBefore.length > 0)
+          if (cell.attemptsBefore.length > 0){
+            info.push('<small>');
             info.push(' ('+ cell.attemptsBefore.length +')');
+            info.push('</small>');
+          }
         }
         info.push('</td>');
         e.push(info.join(''));
