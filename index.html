@@ -1,0 +1,88 @@
+<!-- 
+  By: Hopkins; 
+  Date: 2017-08-14;
+  github: http://github.com/hopkins0;
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/score.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+  </head>
+  <body>
+ 
+
+
+
+  <div class="container">
+    <nav class="navbar navbar-light bg-faded">
+      <div class="col-12 col-sm-6 col-md-8">
+        <p class="text-left">
+          <h3 class="masthead-brand" id='contest-title'>Contest UTM</h3>
+        </p>
+      </div>
+      <div class="col-6 col-md-4">
+        <p class="text-right">
+          <nav class="nav nav-masthead">
+            <a class="nav-link right" id='remaining-time'>00:00:00</a>
+          </nav>
+        </p>
+      </div>
+    </nav>
+    <br><br>
+    <div class="page-content">
+      <table class="table table-bordered" id='score-table'>
+        <thead id="score-table-header" class="thead-inverse" style="background-color: white;">
+          <tr>
+            <th class="equipo-ranking">#</th>
+            <th class="equipo-nombre">Equipo</th>
+            <th class="equipo-aceptados">#AC</th>
+            <th class="equipo-time">Tiempo</th>
+            <th class="problema"><span style="color:#468dd9"> <i class="shadow fa fa-circle"></i></span>A</th>
+            <th class="problema"><span style="color:#468dd9"> <i class="shadow fa fa-circle"></i></span>B</th>
+            <th class="problema"><span style="color:#468dd9"> <i class="shadow fa fa-circle"></i></span>C</th>
+          </tr>
+        </thead>
+        <tbody id="score-table-body">
+          <tr>
+            <th scope="row">1</th>
+            <td>Team</td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-bordered">
+        <tbody>
+          <td class="FPS">Primer envío aceptado en el concurso</td>
+          <td class="ACC">Envío aceptado</td>
+          <td class="FPAC">Primer envío aceptado en el problema</td>
+          <td class="WA">Respuesta incorrecta</td>
+          <td class="JD">Jueceando envío</td>
+        </tbody>
+      </table>
+
+      <button type="button" class="btn btn-secondary" id="final">Resultados finales</button>      
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="./js/score.js"></script>    
+  </body>
+</html>
