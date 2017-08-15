@@ -272,7 +272,7 @@ $(function() {
 
         if (cell.status >= StatusEnum.ACCEPTED){
           usersScore[ i ].solvedProblems ++;
-          usersScore[ i ].penaltyTime += cell.penaltyTime + cell.attemptsBefore.length * contestInfo.contestpenalty / 60;
+          usersScore[ i ].penaltyTime += parseInt(cell.penaltyTime) + parseInt(cell.attemptsBefore.length * contestInfo.contestpenalty / 60);
         }
       }
     }
